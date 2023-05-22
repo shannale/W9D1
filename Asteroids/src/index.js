@@ -1,8 +1,10 @@
+import Asteroid from "./asteroid.js";
 import MovingObject from "./moving_object.js";
 
 const movingObject = require("./moving_object.js")
 
 window.MovingObject = MovingObject;
+window.Asteroid = Asteroid;
 
 // console.log("Webpack is working!")
 const mo = new MovingObject({
@@ -14,6 +16,10 @@ const mo = new MovingObject({
 
 window.mo = mo;
 
+const ast1 = new Asteroid({ pos: [30, 30]
+  });
+
+window.ast1 = ast1
 
 
 const canvasEl = document.getElementById("game-canvas")

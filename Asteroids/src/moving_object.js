@@ -42,7 +42,7 @@ class MovingObject {
 //     });
 // }
 
-  export default MovingObject;
+export default MovingObject;
 
 
 // checking draw(ctx) 
